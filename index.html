@@ -8,71 +8,113 @@
 </head>
 <body>
     <header>
-        <h1>Belleza Natural</h1>
         <nav>
+            <a href="#inicio" class="marca">BN.</a>
             <ul>
                 <li><a href="#inicio">Inicio</a></li>
-                <li><a href="#que-es">¿Qué es?</a></li>
-                <li><a href="#caracteristicas">Características</a></li>
-                <li><a href="#ejemplos">Ejemplos</a></li>
-                <li><a href="#galeria">Galería</a></li>
-                <li><a href="#opinion">Opinión</a></li>
+                <li><a href="#que-es">Concepto</a></li>
+                <li><a href="#caracteristicas">Pilares</a></li>
+                <li><a href="#ejemplos">Rutinas</a></li>
+                <li><a href="#galeria">Looks</a></li>
+                <li><a href="#opinion">Reflexión</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
-        <section id="inicio">
+        <!-- SECCIÓN 1: INICIO - PANTALLA DIVIDIDA -->
+        <section id="inicio" class="split">
             <article>
-                <h2>Inicio</h2>
-                <img src="belleza1.jpg" alt="Rostro con rutina de skincare">
-                <p>La belleza va más allá del maquillaje. Es cuidado, salud y sentirte bien contigo. En esta página explico cómo la belleza real empieza con el amor propio y los buenos hábitos diarios.</p>
+                <div class="texto">
+                    <span class="tag">practica_html5</span>
+                    <h2>Belleza sin filtros</h2>
+                    <p>El mejor proyecto de belleza eres tú. Aquí hablamos de cuidado real, sin promesas falsas. Solo hábitos que sí funcionan.</p>
+                </div>
+                <img src="belleza1.jpg" alt="Primer plano de piel con gotas de agua, belleza natural">
             </article>
         </section>
 
-        <section id="que-es">
+        <!-- SECCIÓN 2: QUÉ ES - IMAGEN DE FONDO -->
+        <section id="que-es" class="full-img">
             <article>
-                <h2>¿Qué es la belleza?</h2>
-                <img src="belleza2.jpg" alt="Productos de belleza naturales">
-                <p>La belleza no tiene una sola definición. Para mí es el equilibrio entre cómo te ves y cómo te sientes. Incluye skincare, alimentación, descanso y la actitud con la que enfrentas el día.</p>
+                <img src="belleza2.jpg" alt="Ingredientes naturales para skincare">
+                <div class="overlay">
+                    <h2>¿Qué es la belleza para mí?</h2>
+                    <p>No es tener piel de porcelana. Es aceptar tu textura, cuidar tu salud y usar productos porque quieres, no porque sientes que debes taparte.</p>
+                </div>
             </article>
         </section>
 
+        <!-- SECCIÓN 3: CARACTERÍSTICAS - 3 COLUMNAS -->
         <section id="caracteristicas">
             <article>
-                <h2>Características del cuidado personal</h2>
-                <img src="belleza3.jpg" alt="Mujer aplicando crema facial">
-                <p>Una rutina de belleza efectiva tiene 3 bases: limpieza, hidratación y protección solar. La constancia es más importante que tener 20 productos. Menos es más cuando conoces tu tipo de piel.</p>
+                <h2 class="titulo-seccion">3 Pilares del Cuidado</h2>
+                <div class="tres-columnas">
+                    <div class="columna">
+                        <img src="belleza3.jpg" alt="Bloqueador solar">
+                        <h3>1. Proteger</h3>
+                        <p>SPF 50 todos los días. Llueva o truene. Es el 80% del antienvejecimiento.</p>
+                    </div>
+                    <div class="columna">
+                        <h3>2. Hidratar</h3>
+                        <p>Por dentro y por fuera. Agua + crema según tu tipo de piel.</p>
+                    </div>
+                    <div class="columna">
+                        <h3>3. Limpiar</h3>
+                        <p>Desmaquillarse siempre. La piel se regenera en la noche.</p>
+                    </div>
+                </div>
             </article>
         </section>
 
-        <section id="ejemplos">
+        <!-- SECCIÓN 4: EJEMPLOS - LISTA CON IMAGEN -->
+        <section id="ejemplos" class="lista-visual">
             <article>
-                <h2>Ejemplos de rutinas</h2>
-                <img src="belleza4.jpg" alt="Set de brochas y maquillaje">
-                <p>Rutina básica de día: limpiador facial, sérum de vitamina C, crema hidratante y bloqueador. Rutina de noche: desmaquillante, limpiador, ácido hialurónico y crema nutritiva. El maquillaje es opcional.</p>
+                <div class="contenido-lista">
+                    <h2>Rutinas que sí sirven</h2>
+                    <ul>
+                        <li><strong>AM:</strong> Limpiador gentil → Antioxidante → Hidratante → Bloqueador</li>
+                        <li><strong>PM:</strong> Aceite limpiador → Limpiador base agua → Activo → Crema</li>
+                        <li><strong>Extra:</strong> Mascarilla 1 vez por semana máximo</li>
+                    </ul>
+                </div>
+                <img src="belleza4.jpg" alt="Productos de skincare ordenados en repisa">
             </article>
         </section>
 
+        <!-- SECCIÓN 5: GALERÍA - MOSAICO -->
         <section id="galeria">
             <article>
-                <h2>Galería</h2>
-                <img src="belleza5.jpg" alt="Collage de estilos de maquillaje">
-                <p>La belleza es diversa. Aquí van ideas de looks: natural para el día a día, glam para eventos, y artístico para cuando quieres experimentar. Cada estilo comunica algo distinto.</p>
+                <h2 class="titulo-seccion">Galería: Menos es más</h2>
+                <div class="mosaico">
+                    <img src="belleza5.jpg" alt="Look maquillaje natural de día">
+                    <div class="texto-mosaico">
+                        <p>La idea es que te veas como tú, pero con la mejor versión de tu piel. El maquillaje es un accesorio, no una máscara obligatoria.</p>
+                    </div>
+                </div>
             </article>
         </section>
 
-        <section id="opinion">
+        <!-- SECCIÓN 6: OPINIÓN - CITA GRANDE -->
+        <section id="opinion" class="cita">
             <article>
-                <h2>Mi opinión</h2>
-                <img src="belleza6.jpg" alt="Persona viéndose al espejo con confianza">
-                <p>Creo que las redes sociales han distorsionado qué es verse bien. La belleza real tiene textura, poros y días malos. El mejor tip de belleza es dormir bien y tomar agua. Todo lo demás es extra.</p>
+                <img src="belleza6.jpg" alt="Persona sonriendo frente al espejo sin maquillaje">
+                <div class="texto-cita">
+                    <h2>Mi reflexión final</h2>
+                    <blockquote>
+                        "La industria vende inseguridades. Yo elijo comprar paz mental. Esa no viene en frasco."
+                    </blockquote>
+                    <p>Gasta en experiencias, en terapia, en descanso. Tu cara te lo va a agradecer más que el sérum de $2000.</p>
+                </div>
             </article>
         </section>
     </main>
 
     <footer>
-        <p>practica_html5 - Tema: Belleza | Hecho por [Tu Nombre] - Abril 2026</p>
+        <div class="footer-contenido">
+            <p><strong>practica_html5</strong> | Tema: Belleza</p>
+            <p>Creado por [Tu Nombre] - Abril 2026</p>
+        </div>
     </footer>
 
     <script src="js/app.js"></script>
