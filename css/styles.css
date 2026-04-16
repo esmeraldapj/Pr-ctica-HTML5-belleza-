@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -6,80 +8,126 @@
 
 html {
     scroll-behavior: smooth;
-    scroll-padding-top: 80px;
+    scroll-padding-top: 100px;
 }
 
 body {
-    font-family: 'Segoe UI', sans-serif;
-    background-color: #fff9fb;
-    color: #333;
-    line-height: 1.7;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #fdf2f8 0%, #fce7f3 100%);
+    color: #444;
+    line-height: 1.8;
 }
 
 header {
-    background: #c06c84;
-    color: white;
-    padding: 1rem 2rem;
+    background: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(10px);
+    padding: 1rem 5%;
     position: fixed;
     width: 100%;
     top: 0;
     z-index: 100;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    border-bottom: 1px solid rgba(236, 72, 153, 0.2);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
 }
 
 header h1 {
-    font-size: 1.8rem;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #db2777;
 }
 
 nav ul {
     list-style: none;
     display: flex;
     flex-wrap: wrap;
-    gap: 1.2rem;
-    margin-top: 0.5rem;
+    gap: 1rem;
 }
 
 nav a {
-    color: white;
+    color: #831843;
     text-decoration: none;
     font-weight: 500;
+    padding: 0.5rem 0.8rem;
+    border-radius: 20px;
+    transition: all 0.3s ease;
 }
 
 nav a:hover {
-    text-decoration: underline;
+    background: #db2777;
+    color: white;
 }
 
 main {
-    max-width: 800px;
-    margin: 100px auto 40px auto;
-    padding: 0 1.5rem;
+    max-width: 1100px;
+    margin: 120px auto 40px auto;
+    padding: 0 2rem;
+    display: grid;
+    gap: 2.5rem;
 }
 
 section {
-    margin-bottom: 3rem;
     background: white;
-    padding: 1.5rem;
-    border-radius: 10px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    padding: 2rem;
+    border-radius: 16px;
+    box-shadow: 0 4px 20px rgba(219, 39, 119, 0.1);
+    transition: transform 0.3s ease;
+}
+
+section:hover {
+    transform: translateY(-5px);
 }
 
 h2 {
-    color: #c06c84;
-    margin-bottom: 1rem;
+    color: #be185d;
+    margin-bottom: 1.2rem;
+    font-size: 1.8rem;
+    border-left: 4px solid #f9a8d4;
+    padding-left: 1rem;
+}
+
+article {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    align-items: center;
+}
+
+article p {
+    font-weight: 300;
 }
 
 article img {
     width: 100%;
-    max-width: 450px;
-    height: auto;
-    border-radius: 8px;
-    margin: 1rem 0;
-    display: block;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+/* Para móvil: imagen arriba, texto abajo */
+@media (max-width: 768px) {
+    article {
+        grid-template-columns: 1fr;
+    }
+    
+    header {
+        justify-content: center;
+        text-align: center;
+    }
+
+    nav ul {
+        justify-content: center;
+        margin-top: 0.8rem;
+    }
 }
 
 footer {
-    background: #6c5b7b;
-    color: white;
+    background: #831843;
+    color: #fce7f3;
     text-align: center;
-    padding: 1.5rem;
+    padding: 2rem;
+    margin-top: 2rem;
 }
